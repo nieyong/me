@@ -13,7 +13,7 @@ title:               穿裤子的云
 tagline:             'nieyong的画家梦想'
 description:         '这里收集了nieyong的文艺梦想，主要是诗歌/科幻/绘画。'
 url:                 
-baseurl:             /me/
+baseurl:             /me
 paginate:            5
 
 # About/contact
