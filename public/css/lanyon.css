@@ -551,3 +551,14 @@ a.pagination-item:hover {
 .layout-reverse.sidebar-overlay #sidebar-checkbox:checked ~ .sidebar {
   box-shadow: -.25rem 0 .5rem rgba(0,0,0,.1);
 }
+
+/* 重写了pro code的css，用于诗歌段 */
+pre {
+background-color: #ffffff;
+padding: 0rem;
+}
+
+pre code {
+font-size: 20px;
+}
+
