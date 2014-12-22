@@ -15,6 +15,7 @@ set expandtab
 set fileencodings=gb2313,ucs-bom,utf-8,chinese
 set helplang=cn
 set history=50
+set hlsearch
 set nomodeline
 set printoptions=paper:a4
 set ruler
@@ -31,9 +32,12 @@ if expand('%') == '' && !&modified && line('$') <= 1 && getline(1) == ''
   let s:wipebuf = bufnr('%')
 endif
 set shortmess=aoO
-badd +0 _posts/2014-12-12-ku-zi-de-yun.md
+badd +60 _posts/2014-12-12-ku-zi-de-yun.md
+badd +47 _posts/2014-12-20-tong-nian.md
+badd +5 _posts/2014-12-22-xing-xing-de-xu-nuo.md
+badd +33 _posts/2014-12-22-wan-ruo-lian-hua.md
 silent! argdel *
-edit _posts/2014-12-12-ku-zi-de-yun.md
+edit _posts/2014-12-22-wan-ruo-lian-hua.md
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -141,11 +145,11 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 74 - ((22 * winheight(0) + 14) / 29)
+let s:l = 1 - ((0 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-74
+1
 normal! 0
 lcd ~/github/me
 tabnext 1
