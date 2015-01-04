@@ -35,9 +35,16 @@ set shortmess=aoO
 badd +60 _posts/2014-12-12-ku-zi-de-yun.md
 badd +47 _posts/2014-12-20-tong-nian.md
 badd +5 _posts/2014-12-22-xing-xing-de-xu-nuo.md
-badd +33 _posts/2014-12-22-wan-ruo-lian-hua.md
+badd +1 _posts/2014-12-22-wan-ruo-lian-hua.md
+badd +6 _posts/2014-12-23-wan-ruo-lian-hua.md
+badd +68 _posts/2014-12-24-te-bie-you-yi-si.md
+badd +4 _posts/2014-12-25-cha-lan-de-xing.md
+badd +27 index.html
+badd +4 _posts/2014-12-27-wo-shi-shui.md
+badd +8 _posts/2014-12-27-chu-xue-san-bu.md
+badd +8 _posts/2014-12-31-yi-ke-xiang-shu.md
 silent! argdel *
-edit _posts/2014-12-22-wan-ruo-lian-hua.md
+edit _posts/2014-12-23-wan-ruo-lian-hua.md
 set splitbelow splitright
 set nosplitbelow
 set nosplitright
@@ -145,11 +152,11 @@ setlocal nowinfixheight
 setlocal nowinfixwidth
 setlocal wrap
 setlocal wrapmargin=0
-let s:l = 1 - ((0 * winheight(0) + 20) / 40)
+let s:l = 10 - ((9 * winheight(0) + 20) / 40)
 if s:l < 1 | let s:l = 1 | endif
 exe s:l
 normal! zt
-1
+10
 normal! 0
 lcd ~/github/me
 tabnext 1
